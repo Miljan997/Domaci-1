@@ -1,2 +1,3 @@
-# Doma-i-1
+# Domaci-1
+
 Izrada prvog domaćeg
