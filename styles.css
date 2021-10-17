@@ -1,15 +1,16 @@
 /*Tablet styles 641-1000*/
 @media screen and (min-width: 641px) {
   body {
-    background-color: lightblue;
+    background-color: white;
   }
 }
 /*Laptop styles 1001--*/
 @media screen and (min-width: 1001px) {
   body {
-    background-color: lightblue;
+    background-color: white;
   }
 }
+/*------------Variables-------------------*/
 
 /*---------------------------------------------*/
 
@@ -25,7 +26,8 @@ li {
 }
 .gray-background {
   background-image: url("/images/header-background.png");
-  background-size: 100vw 70vw;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
 }
 .grid {
   display: grid;
@@ -35,7 +37,7 @@ li {
   grid-column: 2/10;
   grid-row: 1;
   font-size: 3rem;
-  font-family: "Cherish", cursive;
+  font-family: "Carattere", cursive;
   text-align: center;
   margin-bottom: 0.7rem;
   color: white;
@@ -59,7 +61,7 @@ li {
 .pizza {
   grid-column: 4/10;
   grid-row: 4;
-  max-width: 60vw;
+  width: 60vw;
   padding-top: 0.5rem;
 }
 
@@ -70,4 +72,41 @@ li {
   position: relative;
   top: 35vw;
   right: 10vw;
+}
+
+.white-background {
+  background-color: white;
+}
+.txt1 {
+  grid-column: 2/10;
+  grid-row: 5;
+  text-align: center;
+}
+.txt2 {
+  grid-column: 2/10;
+  grid-row: 6;
+  text-align: center;
+}
+.txt3 {
+  grid-column: 2/10;
+  grid-row: 7;
+  text-align: center;
+}
+.white-background div h1 {
+  font-family: "Carattere", cursive;
+}
+.white-background div p {
+  font-family: italic;
+}
+.bottom-text {
+  grid-column: 3/9;
+  grid-row: 8;
+  margin-top: 4rem;
+  text-align: center;
+}
+#bp {
+  font-family: Arial;
+}
+#bbp {
+  margin-top: 2rem;
 }
