@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Italian Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+        }
+        .first-part{
+
+            display: grid;
+            /*grid-template-columns: repeat(4, 1fr);*/
+            grid-template-rows: 100px;
+            grid-auto-rows: 100px;
+            grid-template-areas:
+            "header header header header"
+            "left-content left-content right-content right-content"
+            "left-content left-content right-content right-content";
+            grid-gap: 10px;
+            place-items: center;
+            background-image: url("images/Header Background@1X.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1056px;
+        }
+        .header{
+            grid-area: header;
+            position: absolute;
+            right: 10px;
+            top: 30px;
+        }
+        .header ul{
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+        }
+        .header li{
+            float: left;
+            padding: 2rem;
+        }
+        .header li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #input_container {
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    width: 200px;
+}
+#input {
+
+    height:20px;
+    margin:0;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 100%;
+    border-radius: 2rem;
+    height: 3vw;
+    font-size: x-large;
+}
+#input_img {
+    position:absolute;
+    bottom:25%;
+    right: 0px;
+    width:24px;
+    height:24px;
+}
+.left-content{
+    grid-area: left-content;
+}
+/*.left-content img{*/
+/*    !*position: relative;*!*/
+/*    !*left: 10%;*!*/
+/*    !*!*top: 10%;*!*!*/
+/*    !*bottom: 10%;*!*/
+/*}*/
+#food{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 7rem;
+}
+
+.first-left{
+    position: absolute;
+    left: 10%;
+}
+.first-left h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    font-family: italic;
+}
+    </style>
+</head>
+<body>
+    <div class="first-part">
+        <div class="header">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">OUR STORY</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li>
+                <div id="input_container">
+                     <input type="text" id="input" value>
+                     <img src="images/Search@1X.png" id="input_img">
+                </div>
+            </li>
+        </ul>
+        </div>
+        
+        <div class="left-content">
+            <div class="first-left">
+                <img src="images/Place%20Your%20Logo%20Here%20(Double%20Click%20to%20Edit)@1X.png" alt=""><br><br>
+                <h2 id="food">Italian Food</h2><br><br><br><br>
+                <h3>LOREMIPSUM DOLOR</h3>
+            </div>
+
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+</body>
+</html>
