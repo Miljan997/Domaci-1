@@ -121,7 +121,7 @@
 .first-right-content img {
     position: relative;
     top: 8rem;
-    left: 7rem;
+    left: 8rem;
     width: 90%;
 
 }
@@ -227,7 +227,6 @@
             "third-footer third-footer third-footer";
     background-color: #252525;
     margin-top: 8rem;
-    height: 500px;
     /*border: red 5px solid;*/
 }
 
@@ -248,6 +247,8 @@
 .third-footer {
     grid-area: third-footer;
     /*border: red 5px solid;*/
+    display: flex;
+    justify-content: center;
 }
 
 #third_title {
@@ -279,14 +280,13 @@
     border-radius: 3rem;
     font-size: x-large;
     position: relative;
-    margin-left: 45%;
     bottom: 3rem;
 }
 
 .fourth-part {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 5rem;
     padding: 5rem;
 }
 
@@ -329,4 +329,361 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media only screen and (max-width: 641px) {
+.first-header {
+    grid-area: first-header;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    /*border: 5px solid red;*/
+}
+
+.first-header ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.first-header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1px 6px;
+    text-decoration: none;
+}
+
+#input_container {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 10px;
+    width: 100px;
+}
+#input{
+    height: 8vw;
+}
+
+
+.first-left-content {
+    grid-area: first-left-content;
+    /*border: 5px solid red;*/
+    position: relative;
+    left: 2rem;
+    top: 6rem;
+}
+.first-left-content img{
+    width: 20%;
+}
+.first-left-content h3{
+    font-size: 18px;
+}
+.first-left-content p{
+    font-size: 16px;
+    width: 50%;
+}
+#food {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 4rem;
+}
+
+
+.first-right-content img {
+    position: absolute;
+    top: 45rem;
+    left: 13rem;
+    width: 50%;
+}
+
+
+/*.second-part {*/
+/*    background-color: white;*/
+/*    margin-top: 10px;*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            "second-header second-header second-header"*/
+/*            "second-content second-content second-content"*/
+/*            "second-footer second-footer second-footer";*/
+/*    grid-gap: 5rem;*/
+/*    !*border: 5px red solid;*!*/
+/*}*/
+
+
+#second_title {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.second-header p {
+    margin-top: 2rem;
+    width: 70%;
+    display: inline-block;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    font-size: 18px;
+}
+
+.second-content {
+    grid-area: second-content;
+    display: flex;
+    /*border: 5px red solid;*/
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+
+.meal-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.meal-card p {
+    width: 70%;
+    margin-top: 1.5rem;
+    text-align: left;
+    position: relative;
+    left: 25%;
+    font-size: 16px;
+}
+.meal-card h2{
+    font-size: 16px;
+    width: 70%;
+}
+
+.second-footer {
+    grid-area: second-footer;
+    /*border: 5px red solid;*/
+    text-align: center;
+}
+
+.second-footer a {
+    top: 2rem;
+}
+
+#third_title {
+    font-size: 2.5rem;
+}
+
+.third-content p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+.fourth-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    padding: 2rem;
+}
+
+.fourth-part img {
+    display: inline-block;
+    width: 80%;
+}
+
+.fourth-part h2 {
+    display: inline-block;
+    margin-top: 2rem;
+    width: 70%;
+    font-size: 1.3rem;
+}
+
+.fourth-part p {
+    margin-top: 5rem;
+    width: 80%;
+    font-size: 1rem;
+}
+
+.fourth-part a {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #252525;
+    border-radius: 2rem;
+    font-size: 15px;
+    position: relative;
+    top: 3rem;
+}
+
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 1100px) {
+.first-header {
+    grid-area: first-header;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    /*border: 5px solid red;*/
+}
+
+.first-header ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.first-header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 6px;
+    text-decoration: none;
+}
+
+#input_container {
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0 20px;
+    width: 150px;
+}
+
+#input_img {
+    position: absolute;
+    bottom: 15%;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.first-left-content {
+    grid-area: first-left-content;
+    /*border: 5px solid red;*/
+    position: absolute;
+    left: 2rem;
+}
+
+#food {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 7rem;
+}
+
+
+.first-right-content img {
+    position: absolute;
+    top: 30rem;
+    left: 18rem;
+    width: 70%;
+}
+
+
+.second-part {
+    background-color: white;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:
+            "second-header second-header second-header"
+            "second-content second-content second-content"
+            "second-footer second-footer second-footer";
+    grid-gap: 5rem;
+    /*border: 5px red solid;*/
+}
+
+
+#second_title {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 6rem;
+}
+
+.second-header p {
+    margin-top: 2rem;
+    width: 45%;
+    display: inline-block;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    font-size: 20px;
+}
+
+.second-content {
+    grid-area: second-content;
+    display: flex;
+    margin-top: 1rem;
+    /*border: 5px red solid;*/
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+
+.meal-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.meal-card p {
+    width: 70%;
+    margin-top: 1.5rem;
+    text-align: left;
+    position: relative;
+    left: 25%;
+    font-size: 20px;
+}
+
+.second-footer {
+    grid-area: second-footer;
+    /*border: 5px red solid;*/
+    text-align: center;
+}
+
+.second-footer a {
+    top: 2rem;
+}
+
+#third_title {
+    font-size: 6rem;
+}
+
+.third-content p {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+
+.fourth-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    padding: 4rem;
+}
+
+.fourth-part img {
+    display: inline-block;
+    width: 70%;
+}
+
+.fourth-part h2 {
+    display: inline-block;
+    margin-top: 2rem;
+    width: 70%;
+    font-size: 2rem;
+}
+
+.fourth-part p {
+    margin-top: 5rem;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
 }
