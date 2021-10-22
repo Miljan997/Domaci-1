@@ -15,10 +15,10 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: min-content;
-  row-gap: 1rem;
+  row-gap: 1.3rem;
 }
 .cp-body {
-  background-color: #b8bab9;
+  background-color: white;
 }
 .cp-body > h1 {
   grid-column: 3/9;
@@ -62,7 +62,7 @@ body {
   flex-direction: row;
   justify-content: center;
   background-color: #b8bab9;
-  border: 1px gray solid;
+  /*border: 1px gray solid;*/
   overflow: hidden;
 }
 
@@ -72,7 +72,7 @@ body {
   object-fit: contain;
   text-overflow: ellipsis;
   overflow: hidden;
-  color: blue;
+  color: black;
   text-align: center;
   white-space: wrap;
 }
@@ -138,7 +138,11 @@ p {
 
 @media screen and (min-width: 641px) {
   .cp-body {
-    background-color: greenyellow;
+    background-color: white;
+    font-size: 1.2rem;
+  }
+  .footer {
+    font-size: 1.2rem;
   }
   .review1 {
     grid-column: 2/6;
@@ -181,7 +185,7 @@ p {
     object-fit: contain;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: blue;
+    color: black;
     text-align: center;
     white-space: wrap;
   }
@@ -213,5 +217,82 @@ p {
   .fourth-txt {
     grid-column: 8/10;
     grid-row: 2;
+  }
+}
+
+/*Laptop min width 1001px and max ocntenth width 1200px*/
+
+@media screen and (min-width: 1001px) {
+  .cp-body {
+    font-size: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .review1 {
+    grid-column: 2/6;
+    grid-row: 2;
+    margin-right: 0.5rem;
+  }
+  .review2 {
+    grid-column: 6/10;
+    grid-row: 2;
+    margin-left: 0.5rem;
+  }
+  .review3 {
+    grid-column: 2/6;
+    grid-row: 3;
+    margin-right: 0.5rem;
+  }
+  .review4 {
+    grid-column: 6/10;
+    grid-row: 3;
+    margin-left: 0.5rem;
+  }
+  .review5 {
+    grid-column: 2/6;
+    grid-row: 4;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .review6 {
+    grid-column: 6/10;
+    grid-row: 4;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  /*----------footer style 1001px---------*/
+  .footer {
+    font-size: 2rem;
+  }
+  .first-txt {
+    grid-column: 2/10;
+    grid-row: 1;
+  }
+  .second-txt {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  .second-txt h2 {
+    text-align: center;
+  }
+  .second-txt p {
+    text-align: center;
+  }
+  .third-txt {
+    grid-column: 5/7;
+    grid-row: 2;
+    text-align: center;
+  }
+  .third-txt p {
+    text-align: center;
+  }
+  .fourth-txt {
+    grid-column: 8/10;
+    grid-row: 2;
+    text-align: center;
+  }
+  .fourth-txt p {
+    text-align: center;
   }
 }
