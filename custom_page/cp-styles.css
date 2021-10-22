@@ -11,6 +11,65 @@ li {
 body {
   background-color: white;
 }
+/*----------------heder styles below-----------------*/
+.header {
+  background-image: url("cp-img/Header\ Background@1X\ \(1\).png");
+}
+.navigation {
+  grid-column: 2/10;
+  padding-top: 7%;
+  grid-row: 1;
+}
+.navigation ol {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+.navig {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.navig > a {
+  font-size: 1.3rem;
+  color: white;
+  font-size: 5vw;
+}
+.s-box {
+  grid-column: 2/10;
+  grid-row: 2;
+  margin: auto;
+  width: 50%;
+}
+#white-field {
+  width: 20vw;
+  height: auto;
+  margin-left: 25%;
+  margin-right: auto;
+}
+#mag-glass {
+  position: relative;
+  width: 4vw;
+  height: auto;
+  bottom: 1vw;
+  left: -15%;
+}
+.logo-title {
+  display: inline-flex;
+  grid-column: 2/10;
+  grid-row: 2;
+  padding-bottom: 5%;
+}
+.logo-title img:nth-child(1) {
+  width: 8vw;
+  height: auto;
+}
+.logo-title img:nth-child(2) {
+  height: 7vw;
+  width: auto;
+  float: right;
+  margin-left: 10vw;
+}
+/*----------------heder styles above-----------------*/
 .grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -19,6 +78,7 @@ body {
 }
 .cp-body {
   background-color: white;
+  background-size: auto 300px;
 }
 .cp-body > h1 {
   grid-column: 3/9;
@@ -218,6 +278,7 @@ p {
     grid-column: 8/10;
     grid-row: 2;
   }
+  /*------------------heder styles for tablet----------*/
 }
 
 /*Laptop min width 1001px and max ocntenth width 1200px*/
@@ -225,7 +286,7 @@ p {
 @media screen and (min-width: 1001px) {
   .cp-body {
     font-size: 2rem;
-    max-width: 1200px;
+
     margin: 0 auto;
   }
 
