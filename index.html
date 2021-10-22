@@ -188,34 +188,36 @@
         }
 
         .second-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            /*display: grid;*/
+            grid-area: second-content;
+            /*grid-template-columns: 1fr 1fr 1fr;*/
             margin-top: 2rem;
             /*grid-gap: 10px;*/
             /*border: 2px solid red;*/
 
         }
 
-        .meat-card {
-            /*display: inline-block;*/
+        .meal-card {
+            width: 20%;
+            display: inline-block;
             /*text-align: center;*/
             margin-left: 10rem;
 
         }
 
-        .meat-card img {
+        .meal-card img {
             /*position: relative;*/
             /*left: 25%;*/
         }
 
-        .meat-card h2 {
+        .meal-card h2 {
             margin-top: 1.5rem;
             text-align: left;
             position: relative;
             left: 25%;
         }
 
-        .meat-card p {
+        .meal-card p {
             margin-top: 1.5rem;
             text-align: left;
             position: relative;
@@ -273,7 +275,8 @@
             color: white;
             font-size: 7rem;
         }
-        .third-content p{
+
+        .third-content p {
             margin-top: 10rem;
             color: white;
             font-size: 1.5rem;
@@ -285,6 +288,7 @@
             bottom: 8rem;
 
         }
+
         .third-footer a {
             color: #252525;
             text-align: center;
@@ -296,6 +300,40 @@
             position: relative;
             margin-left: 45%;
             bottom: 5rem;
+        }
+
+        .fourth-part {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3rem;
+            border: 5px red solid;
+            padding: 5rem;
+        }
+
+        .fourth-part img {
+            display: inline-block;
+        }
+        .fourth-part h2{
+            display: inline-block;
+            margin-top: 4rem;
+            width: 450px;
+            font-size: 3rem;
+        }
+        .fourth-part p{
+            margin-top: 5rem;
+            width: 400px;
+            font-size: 1.3rem;
+        }
+        .fourth-part a{
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            background-color: #252525;
+            border-radius: 3rem;
+            font-size: x-large;
+            position: relative;
+            top: 3rem;
+
         }
     </style>
 </head>
@@ -341,22 +379,22 @@
     </div>
 
     <div class="second-content">
-        <div class="meat-card">
-            <img src="images/meat1.png" alt="">
+        <div class="meal-card">
+            <img src="images/meal1.png" alt="">
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet,
                 consectetur adipisicing...
             </p>
         </div>
-        <div class="meat-card">
-            <img src="images/meat2.png" alt="">
+        <div class="meal-card">
+            <img src="images/meal2.png" alt="">
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet,
                 consectetur adipisicing...
             </p>
         </div>
-        <div class="meat-card">
-            <img src="images/meat3.png" alt="">
+        <div class="meal-card">
+            <img src="images/meal3.png" alt="">
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet,
                 consectetur adipisicing...
@@ -392,6 +430,41 @@
 
 </div>
 
+<div class="fourth-part">
+    <div>
+    <img src="images/meal4.png" alt="">
+    </div>
+    <div>
+    <h2>
+        Discount up to
+        50% All Excursions
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing eli t,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+        <div class="fourth-part-footer">
+        <a href="#">READ MORE</a>
+        </div>
+    </div>
+    <div>
+    <h2>
+        January’s Promo:
+Buy 1 Get 1 Free!
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing eli t,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+        <div class="fourth-part-footer">
+        <a href="#">READ MORE</a>
+        </div>
+    </div>
+    <div>
+        <img src="images/meal5.png" alt="">
+    </div>
+
+</div>
 
 </body>
 </html>
